@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+      align-items: center;
+      padding: 2px 12px;
+    "
+  >
+    <input
+      type="search"
+      name=""
+      id="search-btn"
+      style="font-size: 20px; width: 20%"
+    />
+    <button style="font-size: 20px; width: fit-content" onclick="fetchUsers()">
+      Get users
+    </button>
+    <button style="font-size: 20px; width: fit-content" onclick="fetchPhotos()">
+      Get photos
+    </button>
+    <button style="font-size: 20px; width: fit-content" onclick="fetchTodos()">
+      Get todos
+    </button>
+    <button style="font-size: 20px; width: fit-content" onclick="fetchPosts()">
+      Get posts
+    </button>
+    <button
+      style="font-size: 20px; width: fit-content"
+      onclick="fetchDummyjson()"
+    >
+      Get dummyJson
+    </button>
+    <div id="data-cont" style="padding: 2px 12px"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>

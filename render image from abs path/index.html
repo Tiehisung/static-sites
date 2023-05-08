@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Render image on img tag from absolute path">
+    <title>Rendering img from abs path</title>
+</head>
+<body>
+    <img id="image-tag" width="300" height="200" src="" alt="image">
+    <input type="file" name="imageInput" id="image-input">
+<script >
+    document.getElementById("image-input").addEventListener("change", () => {
+  let reader = new FileReader();
+  reader.onload = (loadEvt) => {
+    document.getElementById("image-tag").src = loadEvt.target.result;
+    };
+    console.log(reader)
+  reader.readAsDataURL(this.files[0]);
+});
+
+</script>
+</body>
+</html>

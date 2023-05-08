@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Render Image from File Path</title>
+  </head>
+  <body>
+    <input type="file" id="imageInput">
+    <img id="myImage" src="" alt="Selected Image">
+    <script>
+      document.getElementById("imageInput").addEventListener("change", function() {
+        var reader = new FileReader();
+        reader.onload = function(event) {
+          document.getElementById("myImage").src = event.target.result;
+        };
+        reader.readAsDataURL(this.files[0]);
+      });
+    </script>
+  </body>
+</html>

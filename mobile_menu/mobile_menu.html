@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open close Mobile menu</title>
+    <link rel="stylesheet" href="/mobile_menu/mobile_menu.css" />
+  </head>
+  <body>
+    <p>Mobile menu dev</p>
+
+    <main id="navCont">
+      <ul id="listCont">
+        <li
+          onmouseenter="showLiCont_ME('bCont')"
+          onmouseleave="hideLiCont_ML('bCont')"
+        >
+          Baleqis
+          <ul id="bCont" style="display: none">
+            <li>Baleqis1</li>
+            <li>Baleqis2</li>
+            <li>Baleqis3</li>
+            <li>Baleqis4</li>
+          </ul>
+        </li>
+        <li
+          onmouseenter="showLiCont_ME('mumCont')"
+          onmouseleave="hideLiCont_ML('mumCont')"
+        >
+          Mum
+          <ul id="mumCont" style="display: none">
+            <li>Mum1</li>
+            <li>Mum2</li>
+            <li>Mum3</li>
+            <li>Mum4</li>
+            <li>Mum5</li>
+          </ul>
+        </li>
+        <li
+          onmouseenter="showLiCont_ME('suburCont')"
+          onmouseleave="hideLiCont_ML('suburCont')"
+        >
+          Subur
+          <ul id="suburCont" style="display: none">
+            <li>Subur1</li>
+            <li>Subur2</li>
+            <li>Subur3</li>
+            <li>Subur4</li>
+          </ul>
+        </li>
+        <li
+          onmouseenter="showLiCont_ME('areezCont')"
+          onmouseleave="hideLiCont_ML('areezCont')"
+        >
+          Areez
+          <ul id="areezCont" style="display: none">
+            <li>Areez1</li>
+            <li>Areez2</li>
+            <li>Areez3</li>
+            <li>Areez4</li>
+          </ul>
+        </li>
+        <li
+          onmouseenter="showLiCont_ME('ameeratCont')"
+          onmouseleave="hideLiCont_ML('ameeratCont')"
+        >
+          Ameerat
+          <ul id="ameeratCont" style="display: none">
+            <li>Ameerat1</li>
+            <li>Ameerat2</li>
+            <li>Ameerat3</li>
+            <li>Ameerat4</li>
+          </ul>
+        </li>
+        <li
+          onmouseenter="showLiCont_ME('nakiatCont')"
+          onmouseleave="hideLiCont_ML('nakiatCont')"
+        >
+          Nakiat
+          <ul id="nakiatCont" style="display: none">
+            <li>Nakiat1</li>
+            <li>Nakiat2</li>
+            <li>Nakiat3</li>
+            <li>Nakiat4</li>
+          </ul>
+        </li>
+        <li
+          onmouseenter="showLiCont_ME('myCont')"
+          onmouseleave="hideLiCont_ML('myCont')"
+        >
+          Myself
+          <ul id="myCont" style="display: none">
+            <li>Myself1</li>
+            <li>Myself2</li>
+            <li>Myself3</li>
+            <li>Myself4</li>
+          </ul>
+        </li>
+      </ul>
+      <img
+        src="/mobile_menu/images/menuBlack.png"
+        alt="menu"
+        id="menuImg"
+        title="expand"
+      />
+    </main>
+  </body>
+  <script src="/mobile_menu/mobile_menu.js"></script>
+</html>
